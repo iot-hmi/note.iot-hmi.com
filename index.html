@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script type="text/javascript" src="/assets/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <p><a href="/en/">English</a> version</p>
+
+<p><a href="/zh-tw/">Traditional Chinese(繁體中文)</a> version</p>
+
+<script>
+$( document ).ready(function(){
+  var ln = window.navigator.language||navigator.browserLanguage;
+  var userLang = ln.toLowerCase().substring(0,2);
+  if (userLang == "zh") {
+    window.location.href = "/zh-tw/";
+  }
+  else { //if (userLang == "en") {
+    window.location.href = "/en/";
+  }
+});
+</script>
+
+
+</body>
+</html>
+
+

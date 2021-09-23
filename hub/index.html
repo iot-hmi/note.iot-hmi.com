@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script type="text/javascript" src="/assets/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <pre id="main">
+</pre>
+<script>
+
+var data = `
+[]
+`;
+
+var sURL = {};
+sURL.init = function() {
+  sURL.PageURL = window.location.search.substring(1);
+  sURL.Variables = sURL.PageURL.split('&');
+  sURL.Param = {};
+  sURL.Variables.forEach(function(element){
+    var sParameterName = element.split('=');
+    if (sParameterName[0] != '' ) {
+      sURL.Param[sParameterName[0].toLowerCase()] = sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+    }
+  });
+}
+
+$(document).ready(function () {
+    let entries = JSON.parse(data);
+    console.log("entries:", entries);
+    sURL.init();
+    console.log("lang:", sURL.Param['lang']);
+    console.log("id:", sURL.Param['id']);
+    console.log("ade:", sURL.Param['ade']);
+    console.log("ver:", sURL.Param['ver']);
+    let redirect_entry = entries.find(function (element) {
+      return element['id'] == sURL.Param['id' ] && element['ver'] == sURL.Param['ver'] && element['ade'] == sURL.Param['ade'] && element['ver'] == sURL.Param['ver'];
+    });
+    console.log("redirect_entry:", redirect_entry);
+    if(redirect_entry && redirect_entry.url) {
+      window.location.href = redirect_entry.url;
+    }
+    else {
+      //window.location.href = '/';
+      // for debug, redirect after 30 seconds
+      let body_html = `
+<h3>
+  Redirecting to / after <span id="countdown">30</span> seconds
+</h3>
+<pre id="info">
+</pre>
+`;
+      $(document.body).html(body_html);
+      var seconds = 30;
+    
+      var countdown = function() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            window.location = "/";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout(countdown, 1000);
+        }
+      }  
+      countdown();
+    }
+    $("#info").append("lang: " + sURL.Param['lang']);
+    $("#info").append("\nid: " + sURL.Param['id']);
+    $("#info").append("\nade: " + sURL.Param['ade']);
+    $("#info").append("\nver: " + sURL.Param['ver']);
+    // TODO: widget id change
+    // TODO: new ADE with old widget ver
+});
+</script>
+
+
+</body>
+</html>
+
+

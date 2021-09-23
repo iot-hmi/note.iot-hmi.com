@@ -1,0 +1,56 @@
+{"0": {
+    "doc": "Home",
+    "title": "Home",
+    "content": "English version . Traditional Chinese(繁體中文) version . ",
+    "url": "/",
+    "relUrl": "/"
+  },"1": {
+    "doc": "Auto Redirect",
+    "title": "Auto Redirect",
+    "content": "English manual is coming soon, please select other language EnglishTraditional Chinese(繁體中文) . ",
+    "url": "/en/",
+    "relUrl": "/en/"
+  },"2": {
+    "doc": "Application Note",
+    "title": "Application Note",
+    "content": " ",
+    "url": "/zh-tw/3.3.0/",
+    "relUrl": "/zh-tw/3.3.0/"
+  },"3": {
+    "doc": "Connect with Arduino",
+    "title": "How to Connect Ubique Panel with Arduino",
+    "content": " ",
+    "url": "/zh-tw/3.3.0/connect_with_arduino/#how-to-connect-ubique-panel-with-arduino",
+    "relUrl": "/zh-tw/3.3.0/connect_with_arduino/#how-to-connect-ubique-panel-with-arduino"
+  },"4": {
+    "doc": "Connect with Arduino",
+    "title": "目標",
+    "content": ". | 以Arduino作為主控版，將讀取的IO訊息顯示在Ubique Panel上 . | Ubique Panel與使用者的互動，可以通過通訊協定傳送給Arduino，Arduino控制板可採取相應措施 . | . 事前準備 . | ADE : 請前往IOT Website下載 . | Arduino IDE : 請前往Arduino Website下載 . | . 步驟1 : 下載 IOTBinary Protocol . | 前往 IOT Github . | 下載ZIP檔 . | 根據 README.md 進行操作 . | . 步驟2 : 開啟Arduino IDE . | 建立一個資料夾並命名為 demobox_arduino . | 將從Github下載的ZIP檔解壓縮 . | src裡面的IOTBinaryProtocol.cpp和IOTBinaryProtocol.h檔複製到demobox_arduino的資料夾中 . | examples裡面的demobox_arduino.ino複製到demobox_arduino的資料夾中 . | 利用Arduino IDE開啟demobox_arduino資料夾中的demobox_arduino.ino . | 開發版選擇 Arduino Nano . | 利用usb A轉mini連接線連接Arduino Nano和PC，選擇正確的處理器和序列埠 . | 請依不同Nano選擇處理器，如果還有問題請參考Arduino Website | . | 如果找不到序列埠，請至ftdichip官網下載FT232 USB UART Driver | . | 點擊箭頭⇨下載Arduino程式 . | 拔除Arduino與PC的usb連線 . | . 步驟3 : 開啟 ADE . | 利用ADE開啟examples &gt; ade資料夾中的demobox.epgz . | 將電源和Ubique Panel連接 . | 開啟電源 . | 利用usb線連接Ubique Panel和PC . | 點擊箭頭⇩下載ADE Design . | 拔除Ubique Panel與PC的連線 . | . 步驟4 : 連接Arduino控制板和Ubique Panel . | 利用杜邦線連接Arduino控制板和Ubique Panel . | Arduino Nano 請獨立供電 . | Ubique Panel上的連接器是Pitch 2.0 . | . | . ",
+    "url": "/zh-tw/3.3.0/connect_with_arduino/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/zh-tw/3.3.0/connect_with_arduino/#目標"
+  },"5": {
+    "doc": "Connect with Arduino",
+    "title": "Connect with Arduino",
+    "content": " ",
+    "url": "/zh-tw/3.3.0/connect_with_arduino/",
+    "relUrl": "/zh-tw/3.3.0/connect_with_arduino/"
+  },"6": {
+    "doc": "Arduino HMI",
+    "title": "Arduino HMI",
+    "content": " ",
+    "url": "/zh-tw/3.3.0/arduino_hmi/",
+    "relUrl": "/zh-tw/3.3.0/arduino_hmi/"
+  },"7": {
+    "doc": "Arduino HMI",
+    "title": "Goals",
+    "content": ". | Use Arduino module as the main control board for controlling the I/O functions and show I/O status on Ubique Panel . | Ubique Panel serves as the HMI that communicates with the Arduino module with the predfined protocol. Users can accomplish this without writing any code in Ubique Panel. | . Preparations . | ADE: Please download from IOT Website . | Arduino IDE: Please download from Arduino Website . | . Step 1 : Download IOTBinary Protocol . | Please go to IOT Github . | Download the ZIP file . | Please follow the instructions described in README.md . | . Step 2 : Open Arduino IDE . | Please create a folder and name it demobox_arduino. | Please unzip the downloaded ZIP file from Githbub. | Please copy IOTBinaryProtocol.cpp and IOTBinaryProtocol.h of src directory to demobox_arduino. | Please copy demobox_arduino.ino of examples directory to demobox_arduino. | Please open demobox_arduino.ino of folder demobox_arduino in Arduino IDE. | Please choose Arduino Nano . | Use USB Type A to USB mini connector to connect Arduino Nano with your PC. Please make sure you choose the right processor and serial port. | Please choose the right processor for your NANO module. Please refer to Arduino Website for details. | . | If you cannot find the serial port, Please visit ftdichip and download FT232 USB UART Driver. | . | Pleae click arrow ⇨ to download Arduino program. | Please disconnet the USB cable between the Arduino module and your PC. | . Step 3 : Open ADE . | In ADE, please open demobox.epgz in the examples &gt; ade folder. | Conneect Ubique Panel power cable. | Switch on power. | Use USB cabel to connect your PC with Ubique Panel. | Please click ⇩ for downloading the ADE Design to Ubique Panel. | Disconnect the USB cable between Ubique Panel and your PC. | . Step 4 : Connect Arduino module and Ubique Panel . | Please use DuPont Line to connect the Arduino with Ubique Panel . | ARDUINO NANO module needs a separate and independent power supply. | The connector pitch of Ubique Panel is 2.0mm. | . | . ",
+    "url": "/zh-tw/3.3.0/arduino_hmi/#goals",
+    "relUrl": "/zh-tw/3.3.0/arduino_hmi/#goals"
+  },"8": {
+    "doc": "Auto Redirect",
+    "title": "Auto Redirect",
+    "content": "Redirecting to latest version . ",
+    "url": "/zh-tw/",
+    "relUrl": "/zh-tw/"
+  }
+}

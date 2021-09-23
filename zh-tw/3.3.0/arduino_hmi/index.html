@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html><html lang="zh-tw"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Arduino HMI - ADE Application Note</title>
+
+
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/main-default.css">
+
+  
+
+  
+    <script type="text/javascript" src="/assets/js/vendor/lunr.js"></script>
+  
+  <script type="text/javascript" src="/assets/js/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <script type="text/javascript" src="/assets/js/custom.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewBox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewBox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewBox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+  ADE Application Note
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        
+          
+          
+          
+          
+        
+          
+          
+          
+          
+        <div class="nav-category">
+          <select class="lang_select"><option value="/en/" >English</option><option value="/zh-tw/" selected>Traditional Chinese(繁體中文)</option></select>
+        </div>
+        <div class="nav-category">
+          <select class="ver_select"><option value="/zh-tw/3.3.0/" selected>3.3.0</option></select>
+        </div><ul class="nav-list"><li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="/zh-tw/3.3.0/" class="nav-list-link">Application Note</a><ul class="nav-list "><li class="nav-list-item "><a href="/zh-tw/3.3.0/connect_with_arduino/" class="nav-list-link">Connect with Arduino</a></li><li class="nav-list-item  active"><a href="/zh-tw/3.3.0/arduino_hmi/" class="nav-list-link active">Arduino HMI</a></li></ul></li></ul>
+
+          
+        
+      
+    </nav>
+    <footer class="site-footer">
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search ADE Application Note" aria-label="Search ADE Application Note" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="/zh-tw/3.3.0/">Application Note</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>Arduino HMI</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <h1 id="arduino-hmi">
+        
+        
+          <a href="#arduino-hmi" class="anchor-heading" aria-labelledby="arduino-hmi"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Arduino HMI
+        
+        
+      </h1>
+    
+      <h2 id="goals">
+        
+        
+          <a href="#goals" class="anchor-heading" aria-labelledby="goals"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Goals
+        
+        
+      </h2>
+    
+
+<ol>
+  <li>
+    <p>Use Arduino module as the main control board for controlling the I/O functions and show I/O status on Ubique Panel</p>
+  </li>
+  <li>
+    <p>Ubique Panel serves as the HMI that communicates with the Arduino module with the predfined protocol. Users can accomplish this without writing any code in Ubique Panel.</p>
+  </li>
+</ol>
+      <h3 id="preparations">
+        
+        
+          <a href="#preparations" class="anchor-heading" aria-labelledby="preparations"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Preparations
+        
+        
+      </h3>
+    
+
+<ol>
+  <li>
+    <p>ADE: Please download from <a href="https://www.iot-hmi.com/download/ade/">IOT Website</a></p>
+  </li>
+  <li>
+    <p>Arduino IDE: Please download from <a href="https://www.arduino.cc/en/software">Arduino Website</a></p>
+  </li>
+</ol>
+      <h3 id="step-1--download-iotbinary-protocol">
+        
+        
+          <a href="#step-1--download-iotbinary-protocol" class="anchor-heading" aria-labelledby="step-1--download-iotbinary-protocol"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 1 : Download IOTBinary Protocol
+        
+        
+      </h3>
+    
+
+<ol>
+  <li>
+    <p>Please go to <a href="https://github.com/iot-hmi/IOTBinaryProtocol_Arduino">IOT Github</a></p>
+  </li>
+  <li>
+    <p>Download the ZIP file</p>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file254.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Please follow the instructions described in <a href="https://github.com/iot-hmi/IOTBinaryProtocol_Arduino/blob/main/README.md">README.md</a></p>
+  </li>
+</ol>
+      <h3 id="step-2--open-arduino-ide">
+        
+        
+          <a href="#step-2--open-arduino-ide" class="anchor-heading" aria-labelledby="step-2--open-arduino-ide"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 2 : Open Arduino IDE
+        
+        
+      </h3>
+    
+
+<ol>
+  <li>
+    <p>Please create a folder and name it <span style="color:#1a59b2">demobox_arduino</span>.</p>
+  </li>
+  <li>
+    <p>Please unzip the downloaded ZIP file from Githbub.</p>
+  </li>
+  <li>
+    <p>Please copy IOTBinaryProtocol.cpp and IOTBinaryProtocol.h of src directory to <span style="color:#1a59b2">demobox_arduino</span>.</p>
+  </li>
+  <li>
+    <p>Please copy demobox_arduino.ino of examples directory to <span style="color:#1a59b2">demobox_arduino</span>.</p>
+  </li>
+  <li>
+    <p>Please open demobox_arduino.ino of folder <span style="color:#1a59b2">demobox_arduino</span> in Arduino IDE.</p>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file263.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Please choose <strong>Arduino Nano</strong></p>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file264.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Use USB Type A to USB mini connector to connect Arduino Nano with your PC. Please make sure you choose the right processor and serial port.</p>
+
+    <ul>
+      <li>Please choose the right processor for your NANO module. Please refer to <a href="https://www.arduino.cc/en/Guide/ArduinoNano">Arduino Website</a> for details.</li>
+    </ul>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file265.png" alt="" /></p>
+
+    <ul>
+      <li>If you cannot find the serial port, Please visit <a href="https://ftdichip.com/drivers/vcp-drivers/">ftdichip</a> and download FT232 USB UART Driver.</li>
+    </ul>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file266.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Pleae click arrow ⇨ to download Arduino program.</p>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file267.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Please disconnet the USB cable between the Arduino module and your PC.</p>
+  </li>
+</ol>
+      <h3 id="step-3--open-ade">
+        
+        
+          <a href="#step-3--open-ade" class="anchor-heading" aria-labelledby="step-3--open-ade"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 3 : Open ADE
+        
+        
+      </h3>
+    
+
+<ol>
+  <li>
+    <p>In ADE, please open demobox.epgz in the examples &gt; ade folder.</p>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file260.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Conneect Ubique Panel power cable.</p>
+  </li>
+  <li>
+    <p>Switch on power.</p>
+  </li>
+  <li>
+    <p>Use USB cabel to connect your PC with Ubique Panel.</p>
+  </li>
+  <li>
+    <p>Please click ⇩ for downloading the ADE Design to Ubique Panel.</p>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file268.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Disconnect the USB cable between Ubique Panel and your PC.</p>
+  </li>
+</ol>
+      <h3 id="step-4--connect-arduino-module-and-ubique-panel">
+        
+        
+          <a href="#step-4--connect-arduino-module-and-ubique-panel" class="anchor-heading" aria-labelledby="step-4--connect-arduino-module-and-ubique-panel"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Step 4 : Connect Arduino module and Ubique Panel
+        
+        
+      </h3>
+    
+
+<ol>
+  <li>
+    <p>Please use DuPont Line to connect the Arduino with Ubique Panel</p>
+
+    <ul>
+      <li>
+        <p>ARDUINO NANO module needs a separate and independent power supply.</p>
+      </li>
+      <li>
+        <p>The connector pitch of Ubique Panel is 2.0mm.</p>
+      </li>
+    </ul>
+
+    <p><img src="/zh-tw/3.3.0/imgs/file262.png" alt="" /></p>
+  </li>
+</ol>
+
+        
+
+        
+
+        
+        
+          <hr>
+          <footer>
+            
+              <p><a href="#top" id="back-to-top">Back to top</a></p>
+            
+
+            <p class="text-small text-grey-dk-100 mb-0"></p>
+
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>
+
+
