@@ -47,6 +47,162 @@
     "url": "/zh-tw/3.3.0/arduino_hmi/#goals",
     "relUrl": "/zh-tw/3.3.0/arduino_hmi/#goals"
   },"8": {
+    "doc": "Arduino HMI",
+    "title": "Arduino HMI",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/",
+    "relUrl": "/zh-tw/3.4.1/"
+  },"9": {
+    "doc": "與Arduino通訊",
+    "title": "如何連接博橡Ubique Panel和Arduino",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#%E5%A6%82%E4%BD%95%E9%80%A3%E6%8E%A5%E5%8D%9A%E6%A9%A1ubique-panel%E5%92%8Carduino",
+    "relUrl": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#如何連接博橡ubique-panel和arduino"
+  },"10": {
+    "doc": "與Arduino通訊",
+    "title": "目標",
+    "content": ". | 以Arduino作為主控版，將讀取的IO訊息顯示在Ubique Panel上 . | Ubique Panel與使用者的互動，可以通過通訊協定傳送給Arduino，Arduino控制板可採取相應措施 . | . 事前準備 . | ADE : 請前往IOT Website下載 . | Arduino IDE : 請前往Arduino Website下載 . | . 步驟1 : 下載 IOTBinary Protocol . | 前往 IOT Github . | 下載ZIP檔 . | 根據 README.md 進行操作 . | . 步驟2 : 開啟Arduino IDE . | 建立一個資料夾並命名為 demobox_arduino . | 將從Github下載的ZIP檔解壓縮 . | src裡面的IOTBinaryProtocol.cpp和IOTBinaryProtocol.h檔複製到demobox_arduino的資料夾中 . | examples裡面的demobox_arduino.ino複製到demobox_arduino的資料夾中 . | 利用Arduino IDE開啟demobox_arduino資料夾中的demobox_arduino.ino . | 開發版選擇 Arduino Nano . | 利用usb A轉mini連接線連接Arduino Nano和PC，選擇正確的處理器和序列埠 . | 請依不同Nano選擇處理器，如果還有問題請參考Arduino Website | . | 如果找不到序列埠，請至ftdichip官網下載FT232 USB UART Driver | . | 點擊箭頭⇨下載Arduino程式 . | 拔除Arduino與PC的usb連線 . | . 步驟3 : 開啟 ADE . | 利用ADE開啟examples &gt; ade資料夾中的demobox.epgz . | 將電源和Ubique Panel連接 . | 開啟電源 . | 利用usb線連接Ubique Panel和PC . | 點擊箭頭⇩下載ADE Design . | 拔除Ubique Panel與PC的連線 . | . 步驟4 : 連接Arduino控制板和Ubique Panel . | 利用杜邦線連接Arduino控制板和Ubique Panel . | Arduino Nano 請獨立供電 . | Ubique Panel上的連接器是Pitch 2.0 . | . | . ",
+    "url": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#目標"
+  },"11": {
+    "doc": "與Arduino通訊",
+    "title": "與Arduino通訊",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/",
+    "relUrl": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/"
+  },"12": {
+    "doc": "直屏支援",
+    "title": "如何更新韌體以支援直屏",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/#%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E9%9F%8C%E9%AB%94%E4%BB%A5%E6%94%AF%E6%8F%B4%E7%9B%B4%E5%B1%8F",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#如何更新韌體以支援直屏"
+  },"13": {
+    "doc": "直屏支援",
+    "title": "目標",
+    "content": ". | 將橫屏轉為直屏使用 | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#目標"
+  },"14": {
+    "doc": "直屏支援",
+    "title": "注意事項",
+    "content": ". | 橫屏與直屏的轉換，無法於執行時啟用，必須透過更新正確的韌體來達到 . | 轉了直屏後，可透過更新韌體再轉回橫屏 . | 兩個產品提供直屏模式 : IA208048MC-050ABP 和 IA208048MC-050ABJ . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#注意事項"
+  },"15": {
+    "doc": "直屏支援",
+    "title": "事前準備",
+    "content": ". | 最新版ADE (3.4.1) : 請前往IOT Website下載 . | USB A to Micro USB的線 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#事前準備"
+  },"16": {
+    "doc": "直屏支援",
+    "title": "直屏支援",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/"
+  },"17": {
+    "doc": "獲取控制板資訊",
+    "title": "如何獲取控制板資訊",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E5%A6%82%E4%BD%95%E7%8D%B2%E5%8F%96%E6%8E%A7%E5%88%B6%E6%9D%BF%E8%B3%87%E8%A8%8A",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#如何獲取控制板資訊"
+  },"18": {
+    "doc": "獲取控制板資訊",
+    "title": "步驟1",
+    "content": ". | 打開ADE 3.4.1 . 可由 系統選單 &gt; 關於… 確認ADE版本 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F1",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟1"
+  },"19": {
+    "doc": "獲取控制板資訊",
+    "title": "步驟2",
+    "content": ". | 將電腦和控制板用USB線做連接 | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F2",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟2"
+  },"20": {
+    "doc": "獲取控制板資訊",
+    "title": "步驟3",
+    "content": ". | 開啟 系統選單 &gt; 設定… . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F3",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟3"
+  },"21": {
+    "doc": "獲取控制板資訊",
+    "title": "步驟4",
+    "content": ". | 選擇 安裝與更新 &gt; 重新取得控制板資訊 . | 點選取得控制板資訊後，可以得到控制板的尺寸，LCM供應商，以及解析度等等 . | E表示Evervision，P表示Powertip . | 解析度為800x480 . | . | 記住LCM供應商以及解析度，更新韌體時會需要這些資訊 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F4",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟4"
+  },"22": {
+    "doc": "獲取控制板資訊",
+    "title": "獲取控制板資訊",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/"
+  },"23": {
+    "doc": "更新韌體",
+    "title": "如何更新韌體",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E9%9F%8C%E9%AB%94",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#如何更新韌體"
+  },"24": {
+    "doc": "更新韌體",
+    "title": "步驟1",
+    "content": ". | 打開ADE 3.4.1 . 可由 系統選單 &gt; 關於… 確認ADE版本 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F1",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟1"
+  },"25": {
+    "doc": "更新韌體",
+    "title": "步驟2",
+    "content": ". | 將電腦和控制板用USB線做連接 | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F2",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟2"
+  },"26": {
+    "doc": "更新韌體",
+    "title": "步驟3",
+    "content": ". | 開啟 系統選單 &gt; 設定… . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F3",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟3"
+  },"27": {
+    "doc": "更新韌體",
+    "title": "步驟4",
+    "content": ". | 選擇 安裝與更新 &gt; 韌體更新 . | 在這裡我們需要用到上個章節所得到的LCM供應商以及解析度資訊 . | 如果使用的為LCM供應商為Evervision，則選擇480x800 Evervision的韌體，並點選開啟 . | 如果使用的LCM供應商為Powertip，則選擇480x800 Powertip的韌體，並點選開啟 . | . | 當看到此訊息框，表示韌體更新成功並完成 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F4",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟4"
+  },"28": {
+    "doc": "更新韌體",
+    "title": "更新韌體",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/"
+  },"29": {
+    "doc": "問題與解決",
+    "title": "常見問題與解決",
+    "content": ". | 更新完韌體後，重新開機可能會遇到以下幾種問題 | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%88%87%E8%A7%A3%E6%B1%BA",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#常見問題與解決"
+  },"30": {
+    "doc": "問題與解決",
+    "title": "問題1",
+    "content": ". | Loader Logo顯示異常 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E5%95%8F%E9%A1%8C1",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#問題1"
+  },"31": {
+    "doc": "問題與解決",
+    "title": "問題2",
+    "content": ". | 畫面只顯示一半的內容 . | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E5%95%8F%E9%A1%8C2",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#問題2"
+  },"32": {
+    "doc": "問題與解決",
+    "title": "解決方法",
+    "content": ". | 當遇到上述問題，請確認ADE專案的解析度是否正確，並下載正確解析度的專案 | . ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#解決方法"
+  },"33": {
+    "doc": "問題與解決",
+    "title": "問題與解決",
+    "content": " ",
+    "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/",
+    "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/"
+  },"34": {
     "doc": "Auto Redirect",
     "title": "Auto Redirect",
     "content": "Redirecting to latest version . ",

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Application Note - ADE Application Note</title>
+  <title>直屏支援 - ADE Application Note</title>
 
 
 
@@ -87,8 +87,8 @@
           <select class="lang_select"><option value="/en/" >English</option><option value="/zh-tw/" selected>Traditional Chinese(繁體中文)</option></select>
         </div>
         <div class="nav-category">
-          <select class="ver_select"><option value="/zh-tw/3.4.1/" >3.4.1</option><option value="/zh-tw/3.3.0/" selected>3.3.0</option></select>
-        </div><ul class="nav-list"><li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="/zh-tw/3.3.0/" class="nav-list-link active">Application Note</a><ul class="nav-list "><li class="nav-list-item "><a href="/zh-tw/3.3.0/connect_with_arduino/" class="nav-list-link">Connect with Arduino</a></li><li class="nav-list-item "><a href="/zh-tw/3.3.0/arduino_hmi/" class="nav-list-link">Arduino HMI</a></li></ul></li></ul>
+          <select class="ver_select"><option value="/zh-tw/3.4.1/" selected>3.4.1</option><option value="/zh-tw/3.3.0/" >3.3.0</option></select>
+        </div><ul class="nav-list"><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="/zh-tw/3.4.1/" class="nav-list-link">Arduino HMI</a><ul class="nav-list "><li class="nav-list-item "><a href="/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/" class="nav-list-link">與Arduino通訊</a></li></ul></li><li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="/zh-tw/3.4.1/portrait_mode_support/" class="nav-list-link active">直屏支援</a><ul class="nav-list "><li class="nav-list-item "><a href="/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/" class="nav-list-link">獲取控制板資訊</a></li><li class="nav-list-item "><a href="/zh-tw/3.4.1/portrait_mode_support/update_firmware/" class="nav-list-link">更新韌體</a></li><li class="nav-list-item "><a href="/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/" class="nav-list-link">問題與解決</a></li></ul></li></ul>
 
           
         
@@ -116,7 +116,63 @@
       
       <div id="main-content" class="main-content" role="main">
         
-          
+          <h1 id="如何更新韌體以支援直屏">
+        
+        
+          <a href="#如何更新韌體以支援直屏" class="anchor-heading" aria-labelledby="如何更新韌體以支援直屏"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 如何更新韌體以支援直屏
+        
+        
+      </h1>
+    
+      <h2 id="目標">
+        
+        
+          <a href="#目標" class="anchor-heading" aria-labelledby="目標"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 目標
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>將橫屏轉為直屏使用</li>
+</ul>
+      <h2 id="注意事項">
+        
+        
+          <a href="#注意事項" class="anchor-heading" aria-labelledby="注意事項"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 注意事項
+        
+        
+      </h2>
+    
+
+<ol>
+  <li>
+    <p>橫屏與直屏的轉換，無法於執行時啟用，必須透過更新正確的韌體來達到</p>
+  </li>
+  <li>
+    <p>轉了直屏後，可透過更新韌體再轉回橫屏</p>
+  </li>
+  <li>
+    <p>兩個產品提供直屏模式 : <strong>IA208048MC-050ABP</strong> 和 <strong>IA208048MC-050ABJ</strong></p>
+  </li>
+</ol>
+      <h2 id="事前準備">
+        
+        
+          <a href="#事前準備" class="anchor-heading" aria-labelledby="事前準備"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 事前準備
+        
+        
+      </h2>
+    
+
+<ol>
+  <li>
+    <p>最新版ADE (3.4.1) : 請前往<a href="https://www.iot-hmi.com/download/ade/">IOT Website</a>下載</p>
+  </li>
+  <li>
+    <p>USB A to Micro USB的線</p>
+  </li>
+</ol>
 
         
 
@@ -125,11 +181,15 @@
           <h2 class="text-delta">Table of contents</h2>
           <ul>
               <li>
-                <a href="/zh-tw/3.3.0/connect_with_arduino/">Connect with Arduino</a>
+                <a href="/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/">獲取控制板資訊</a>
               </li>
             
               <li>
-                <a href="/zh-tw/3.3.0/arduino_hmi/">Arduino HMI</a>
+                <a href="/zh-tw/3.4.1/portrait_mode_support/update_firmware/">更新韌體</a>
+              </li>
+            
+              <li>
+                <a href="/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/">問題與解決</a>
               </li>
             
           </ul>
