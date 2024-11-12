@@ -1,0 +1,154 @@
+html {
+    font-size: 18px !important;
+}
+
+html * {
+    font-size: 0.9rem;
+}
+
+.main-content h1 {
+    font-size: 2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.main-content h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.main-content h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+
+table.table_properties td:nth-child(1) {
+    width: 10vw;
+}
+
+table.table_properties td:nth-child(1) img {
+    width: 90%;
+}
+
+table.table_properties td:nth-child(2) {
+    width: 40vw;
+}
+
+table.table_properties td:nth-child(3) {
+    width: 20vw;
+}
+
+table.table_properties th {
+    background-color: #F2F2F2;
+}
+
+table.table_properties tr:nth-child(even) td {
+    background-color: #F2F2F2;
+}
+
+div.video_container {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-bottom: 45%;
+    min-width: 512px;
+    min-height: 280px;
+}
+
+figure.video_container_educational iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img.img_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateY(15%);
+}
+
+img.widget_icon {
+    width: 6rem;
+    height: 6rem;
+}
+
+p.for_img_mid {
+    width: 480px;
+    height: 360px
+}
+
+p.for_img_mid a {
+    background: none;
+}
+
+p.for_img_mid a:hover {
+    background: none;
+}
+
+p.for_img_larger {
+    width: 960px;
+    height: 522px;
+}
+
+p.for_img_240x360 {
+    width: 240px;
+    height: 360px;
+}
+
+p.for_img_480x240 {
+    width: 480px;
+    height: 240px;
+}
+
+p.for_img_480x180 {
+    width: 480px;
+    height: 180px;
+}
+
+p.for_img_part {
+    width: 240px;
+    height: 180px;
+}
+
+div.note_container {
+    border: 0.1rem gray solid;
+    margin-bottom: 2rem;
+    color: gray;
+}
+
+div.note_container img {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+div.note_container span {
+    vertical-align: middle;
+}
+
+.lang_select {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 320px) {}
+
+@media (min-width: 500px) {}
+
+@media (min-width: 800px) {}
+
+@media (min-width: 1064px) {}
+
+@media (min-width: 1400px) {
+
+    .side-bar {
+        width: auto;
+    }
+
+    .main {
+        margin-left: 264px;
+        max-width: 80vw;
+    }
+}

@@ -14,6 +14,7 @@ var data = `
 []
 `;
 
+
 var sURL = {};
 sURL.init = function() {
   sURL.PageURL = window.location.search.substring(1);
@@ -27,6 +28,26 @@ sURL.init = function() {
   });
 }
 
+/*
+function getQueryParams() {
+  let params = {};
+  let queryString = window.location.search.substring(1);
+  let regex = /([^&=]+)=([^&]*)/g;
+  let m;
+  while (m = regex.exec(queryString)) {
+    params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+  }
+  return params;
+}*/
+
+function normalizeVersion(version) {
+  let baseVersionMatch = version.match(/^(\d+\.\d+\.\d+)/);
+  if (baseVersionMatch) {
+    return baseVersionMatch[1];
+  }
+  return version;
+}
+
 $(document).ready(function () {
     let entries = JSON.parse(data);
     console.log("entries:", entries);
@@ -35,8 +56,10 @@ $(document).ready(function () {
     console.log("id:", sURL.Param['id']);
     console.log("ade:", sURL.Param['ade']);
     console.log("ver:", sURL.Param['ver']);
+    sURL.Param['ade'] = normalizeVersion(sURL.Param['ade']);
+    console.log("ade:", sURL.Param['ade']);
     let redirect_entry = entries.find(function (element) {
-      return element['id'] == sURL.Param['id' ] && element['ver'] == sURL.Param['ver'] && element['ade'] == sURL.Param['ade'] && element['ver'] == sURL.Param['ver'];
+      return element['id'] == sURL.Param['id' ] && element['ver'] == sURL.Param['ver'] && element['ade'] == sURL.Param['ade'] && element['lang'] == sURL.Param['lang'];
     });
     console.log("redirect_entry:", redirect_entry);
     if(redirect_entry && redirect_entry.url) {
@@ -51,10 +74,11 @@ $(document).ready(function () {
 </h3>
 <pre id="info">
 </pre>
+
 `;
-      $(document.body).html(body_html);
-      var seconds = 30;
-    
+$(document.body).html(body_html);
+var seconds = 30;
+
       var countdown = function() {
         seconds = seconds - 1;
         if (seconds < 0) {
@@ -65,7 +89,7 @@ $(document).ready(function () {
             // Count down using javascript
             window.setTimeout(countdown, 1000);
         }
-      }  
+      }
       countdown();
     }
     $("#info").append("lang: " + sURL.Param['lang']);
@@ -74,6 +98,7 @@ $(document).ready(function () {
     $("#info").append("\nver: " + sURL.Param['ver']);
     // TODO: widget id change
     // TODO: new ADE with old widget ver
+
 });
 </script>
 
