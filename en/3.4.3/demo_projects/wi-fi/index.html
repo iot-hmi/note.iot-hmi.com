@@ -208,38 +208,29 @@
       </h4>
     
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-ITA_SSID_0 : 
--ITA_SSID_1 : 
--ITA_SSID_2 : 
--ITA_SSID_3 : 
--ITA_SSID_4 : 
--ITA_PW : 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-ITA_SSID_0~4 : 點狀觸控區塊，點擊後 IVL_SSID 顯示該 SSID 
+-ITA_PW : 點狀觸控區塊，點擊後觸發右上角"彈出式輸入對話盒"，方可輸入欲輸入的密碼
 
--INB_Restart :
--INB_Sacn :
--INB_Connect :
--INB_Disconnect :
--INB_IP :
--INB_Next :
--INB_Up :
--INB_Dn :
+-INB_Restart : 點擊後重新啟動 Wi-Fi Device
+-INB_Sacn : 點擊後開始搜尋附近 Device
+-INB_Connect : 點擊後開始連線
+-INB_Disconnect : 點擊後斷開連線
+-INB_IP : 點擊後獲取 IP 與 MAC
+-INB_Next : 點擊後跳至下一頁
+-INB_Up : 點擊後切換成上一個 SSID
+-INB_Dn : 點擊後切換成下一個 SSID
 
--ICO : python
+-ICO : Define some global function
 -IIP1 : 彈出式輸入對話盒
--IT : 計時器
+-IT : 設定時間到時在 IVL_Status 顯示當前的狀態
 
--IVL_PW :
--IVL_Result :
--IVL_Status :
--IVL_Description :
-
-
-
--IVL_RCV_COM_DATA 綁定暫存器名稱 : rcv_com_data
--IVL_SND_COM_DATA 綁定暫存器名稱 : iip_res
--ITA_SND_CAN_ID : 點狀觸控區塊，點擊後觸發左下角"彈出式輸入對話盒"，方可輸入欲傳送的資料內容
-
--SEND : 點擊後觸發事件，傳送輸入資料，將回傳結果顯示在 IVL_RCV_COM_DATA
+-IVL_SSID_0~4 : 顯示出 SSID 
+-IVL_PW : 顯示輸入的密碼
+-IVL_Result : 顯示 INB_IP 執行結果
+-IVL_Status : 顯示 IT 時間到後的結果
+-IVL_Description : 顯示 INB_Restart、INB_Sacn、INB_Connect、INB_Disconnect、NB_IP 狀態
+-IVL_IP : 顯示 IP
+-IVL_Status : 顯示當前狀態
 </code></pre></div></div>
       <h4 id="page2">
         
@@ -278,9 +269,9 @@
 
     -Backlight : 螢幕鎖定設定 180 秒
     -RTC : 設定實時時鐘
-    -RS-485: uart8 : 從 COM port 接收資訊，並顯示其資料
+    -Wi-Fi: 透過 ESP8266 module restart Wi-Fi device
        =&gt; 匯入檔案
-            1. com.py
+            1. esp8266.py
 </code></pre></div></div>
       <h3 id="步驟4--輸出-demo-project">
         
@@ -306,12 +297,18 @@
 成功後，如下方畫面顯示
 </code></pre></div></div>
 
-<待更新>  
-
-#### 輸出至 panel
+<p><img src="/en/3.4.3/imgs/wi-fi_simulator.png" alt="" /></p>
+      <h4 id="輸出至-panel">
+        
+        
+          <a href="#輸出至-panel" class="anchor-heading" aria-labelledby="輸出至-panel"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 輸出至 panel
+        
+        
+      </h4>
+    
 
 <待更新>
-</待更新></待更新>
+</待更新>
 
         
 
