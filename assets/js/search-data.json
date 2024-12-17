@@ -325,7 +325,7 @@
   },"54": {
     "doc": "Ehtnernet Demo",
     "title": "目標",
-    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往IOT Website下載 | Ethernet Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “demo_ethernet.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_ethernet.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -IVL_ETH_CFG 綁定暫存器名稱 : eth_cfg -IVL_ETH_RTC 綁定暫存器名稱 : eth_rtc -IVL_ETH_PING_IP 綁定暫存器名稱 : eth_ping_ip -IVL_ETH_PING_RES 綁定暫存器名稱 : eth_ping_res -ITA : 點狀觸控區塊，點擊後觸發右上角\"彈出式輸入對話盒\"，方可輸入指定 IP Address -ETH CFG : 點擊後觸發事件，將結果顯示在 IVL_ETH_CFG -RTC TEST : 點擊後觸發事件，將結果顯示在 IVL_ETH_RTC -ETH PING : 點擊後觸發事件，將結果顯示在 IVL_ETH_PING_RES . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -Ethernet : 初始化 Ethernet 連接，並檢查其連線狀態 =&gt; 匯入檔案 1. eth.py 2. uping.py . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . -ETH CFG : 點擊後右側顯示 Ethernet configuration -RTC TEST : 點擊後右側顯示實時時間 -ETH PING : 點擊後開始 ping 指定的 IP Address -IVL_ETH_PING_IP : 點擊輸入要 ping 的 IP Address (10.0.0.1) -IVL_ETH_PING_RES : 顯示 ping 的結果 . 輸出至 panel . ",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | Ethernet Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “demo_ethernet.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_ethernet.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -IVL_ETH_CFG 綁定暫存器名稱 : eth_cfg -IVL_ETH_RTC 綁定暫存器名稱 : eth_rtc -IVL_ETH_PING_IP 綁定暫存器名稱 : eth_ping_ip -IVL_ETH_PING_RES 綁定暫存器名稱 : eth_ping_res -ITA : 點狀觸控區塊，點擊後觸發右上角\"彈出式輸入對話盒\"，方可輸入指定 IP Address -ETH CFG : 點擊後觸發事件，將結果顯示在 IVL_ETH_CFG -RTC TEST : 點擊後觸發事件，將結果顯示在 IVL_ETH_RTC -ETH PING : 點擊後觸發事件，將結果顯示在 IVL_ETH_PING_RES . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -Ethernet : 初始化 Ethernet 連接，並檢查其連線狀態 =&gt; 匯入檔案 1. eth.py 2. uping.py . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . -ETH CFG : 點擊後右側顯示 Ethernet configuration -RTC TEST : 點擊後右側顯示實時時間 -ETH PING : 點擊後開始 ping 指定的 IP Address -IVL_ETH_PING_IP : 點擊輸入要 ping 的 IP Address (10.0.0.1) -IVL_ETH_PING_RES : 顯示 ping 的結果 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb 2. 開機後點擊 ETH CFG 獲取 ip, mask, gateway, dns 等資訊並顯示在右方 3. 點擊 RTC TEST 獲取實時資訊並顯示在右方 (透過 NTP 獲取時間, 請確保有網路連線) 4. ETH PING 右側點擊輸入欲 ping 的 ip (預設是 10.0.0.1) 5. 下方會顯示 ping 的結果 . 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
     "url": "/en/3.4.3/demo_projects/ethernet/#%E7%9B%AE%E6%A8%99",
     "relUrl": "/en/3.4.3/demo_projects/ethernet/#目標"
   },"55": {
@@ -343,7 +343,7 @@
   },"57": {
     "doc": "RS-485 Demo",
     "title": "目標",
-    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | RS-485 Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_com.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_com.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -IVL_RCV_COM_DATA 綁定暫存器名稱 : rcv_com_data -IVL_SND_COM_DATA 綁定暫存器名稱 : iip_res -ITA_SND_CAN_ID : 點狀觸控區塊，點擊後觸發左下角\"彈出式輸入對話盒\"，方可輸入欲傳送的資料內容 -SEND : 點擊後觸發事件，傳送輸入資料，將回傳結果顯示在 IVL_RCV_COM_DATA . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -RS-485: uart8 : 從 COM port 接收資訊，並顯示其資料 =&gt; 匯入檔案 1. com.py . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . #### 輸出至 panel ",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | RS-485 Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_com.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_com.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -IVL_RCV_COM_DATA 綁定暫存器名稱 : rcv_com_data -IVL_SND_COM_DATA 綁定暫存器名稱 : iip_res -ITA_SND_CAN_ID : 點狀觸控區塊，點擊後觸發左下角\"彈出式輸入對話盒\"，方可輸入欲傳送的資料內容 -SEND : 點擊後觸發事件，用 com.send() 來傳送輸入的資料，將回傳結果顯示在 IVL_RCV_COM_DATA . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -RS-485: uart8 : 如下圖 RS-485 Configuration 所示,這裡定義了call back function \"com_rcv(data)\", 來處理從 com port 或接收到的資訊, 並顯示接收到的資料 =&gt; 匯入檔案 1. com.py -&gt; 其中，com.py 裡面定義了 RS485 傳輸的初始化設定(包含uart id, baudrate, buffer size...等) . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb 2. 接上 RS-485 轉 usb 至 PC 端, 並在 PC 開啟終端工具(如: Putty) 3. 傳送資訊 =&gt; 點擊 SND COM DATA 下方, 輸入要傳送的資料(如圖傳送\"1\"), PC 端可以看到傳送的資訊 4. 接收資訊 =&gt; 在PC端輸入資訊(如圖傳送\"Hello\"), RCV COM DATA 下方會顯示接收到的資訊 . 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
     "url": "/en/3.4.3/demo_projects/rs-485/#%E7%9B%AE%E6%A8%99",
     "relUrl": "/en/3.4.3/demo_projects/rs-485/#目標"
   },"58": {
@@ -361,7 +361,7 @@
   },"60": {
     "doc": "Wi-Fi Demo",
     "title": "目標",
-    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | RS-485 Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_wifi.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_wifi.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -ITA_SSID_0~4 : 點狀觸控區塊，點擊後 IVL_SSID 顯示該 SSID -ITA_PW : 點狀觸控區塊，點擊後觸發右上角\"彈出式輸入對話盒\"，方可輸入欲輸入的密碼 -INB_Restart : 點擊後重新啟動 Wi-Fi Device -INB_Sacn : 點擊後開始搜尋附近 Device -INB_Connect : 點擊後開始連線 -INB_Disconnect : 點擊後斷開連線 -INB_IP : 點擊後獲取 IP 與 MAC -INB_Next : 點擊後跳至下一頁 -INB_Up : 點擊後切換成上一個 SSID -INB_Dn : 點擊後切換成下一個 SSID -ICO : Define some global function -IIP1 : 彈出式輸入對話盒 -IT : 設定時間到時在 IVL_Status 顯示當前的狀態 -IVL_SSID_0~4 : 顯示出 SSID -IVL_PW : 顯示輸入的密碼 -IVL_Result : 顯示 INB_IP 執行結果 -IVL_Status : 顯示 IT 時間到後的結果 -IVL_Description : 顯示 INB_Restart、INB_Sacn、INB_Connect、INB_Disconnect、NB_IP 狀態 -IVL_IP : 顯示 IP -IVL_Status : 顯示當前狀態 . Page2 . -INB_RTC: 點擊後觸發事件，獲取實時時間 -INB_Ping : 開始 PING -INB_Pre : 返回上一頁 -IVL_RTC 綁定暫存器名稱 : rtc 用於顯示實時時間 -IVL_Ping_IP 綁定暫存器名稱 : ping_ip 用於顯示輸入的 IP Address -IVL_Ping_Res 綁定暫存器名稱 : ping_res 用於顯示 ping 完後的結果 -ITA_Ping_IP : 點狀觸控區塊，點擊後觸發左下角\"彈出式輸入對話盒\"，方可輸入欲 ping 的 IP Address -IIP2 : 彈出式輸入對話盒 -IT_Ping : 定期 ping 到指定的 IP Address . Page3 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -Wi-Fi: 透過 ESP8266 module restart Wi-Fi device =&gt; 匯入檔案 1. esp8266.py . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . ",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | Wi-Fi Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_wifi.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_wifi.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -ITA_SSID_0~4 : 點狀觸控區塊，點擊後 IVL_SSID 顯示該 SSID -ITA_PW : 點狀觸控區塊，點擊後觸發右上角\"彈出式輸入對話盒\"，方可輸入欲輸入的密碼 -INB_Restart : 點擊後重新啟動 Wi-Fi Device -INB_Sacn : 點擊後開始搜尋附近 Device -INB_Connect : 點擊後開始連線 -INB_Disconnect : 點擊後斷開連線 -INB_IP : 點擊後獲取 IP 與 MAC -INB_Next : 點擊後跳至下一頁 -INB_Up : 點擊後切換成上一個 SSID -INB_Dn : 點擊後切換成下一個 SSID -ICO : Define some global function -IIP1 : 彈出式輸入對話盒 -IT : 設定時間到時在 IVL_Status 顯示當前的狀態 -IVL_SSID_0~4 : 顯示出 SSID -IVL_PW : 顯示輸入的密碼 -IVL_Result : 顯示 INB_IP 執行結果 -IVL_Status : 顯示 IT 時間到後的結果 -IVL_Description : 顯示 INB_Restart、INB_Sacn、INB_Connect、INB_Disconnect、NB_IP 狀態 -IVL_IP : 顯示 IP -IVL_Status : 顯示當前狀態 . Page2 . -INB_RTC: 點擊後觸發事件，獲取實時時間 -INB_Ping : 開始 PING -INB_Pre : 返回上一頁 -IVL_RTC 綁定暫存器名稱 : rtc 用於顯示實時時間 -IVL_Ping_IP 綁定暫存器名稱 : ping_ip 用於顯示輸入的 IP Address -IVL_Ping_Res 綁定暫存器名稱 : ping_res 用於顯示 ping 完後的結果 -ITA_Ping_IP : 點狀觸控區塊，點擊後觸發左下角\"彈出式輸入對話盒\"，方可輸入欲 ping 的 IP Address -IIP2 : 彈出式輸入對話盒 -IT_Ping : 定期 ping 到指定的 IP Address . Page3 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -Wi-Fi: 透過 ESP8266 module restart Wi-Fi device =&gt; 匯入檔案 1. esp8266.py . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb 2. 重開機後, 點擊 scan 開始搜尋周圍的 Wi-Fi 裝置 3. 右側會顯示 SSID 點擊可以選擇對應的 SSID 並輸入密碼 (範例 SSID: eds-hsinchu PWD: 54998065) 4. 點擊 Connect 連上後下方顯示 AP connected 5. 點擊 IP 獲取此裝置配到的 IP (10.0.0.8) 以及 MAC 資訊 . 1. 點擊 RTC 獲取實時資訊 2. 輸入 Wi-Fi IP (10.0.0.1) 接著點擊 Ping 3. 下方顯示 Ping 的結果 . 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
     "url": "/en/3.4.3/demo_projects/wi-fi/#%E7%9B%AE%E6%A8%99",
     "relUrl": "/en/3.4.3/demo_projects/wi-fi/#目標"
   },"61": {
@@ -371,252 +371,324 @@
     "url": "/en/3.4.3/demo_projects/wi-fi/",
     "relUrl": "/en/3.4.3/demo_projects/wi-fi/"
   },"62": {
+    "doc": "Modbus RTU Demo",
+    "title": "Modbus RTU Demo Project 操作示範",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/modbus_rtu/#modbus-rtu-demo-project-%E6%93%8D%E4%BD%9C%E7%A4%BA%E7%AF%84",
+    "relUrl": "/en/3.4.3/demo_projects/modbus_rtu/#modbus-rtu-demo-project-操作示範"
+  },"63": {
+    "doc": "Modbus RTU Demo",
+    "title": "目標",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | Modbus RTU Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_modbus_rtu.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_modbus_rtu.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . | 功能碼 | 功能名稱 | 用途 | . | 0x01 | 讀取線圈 (Read Coils) | 讀取設備的數字輸出狀態 (0 或 1) | . | 0x02 | 讀取離散輸入 (Read Discrete Inputs) | 讀取設備的數字輸入狀態 (0 或 1) | . | 0x03 | 讀取保持暫存器 (Read Holding Registers) | 讀取設備內的參數值或狀態值 (16 位) | . | 0x04 | 讀取輸入暫存器 (Read Input Registers) | 讀取設備的即時測量值或傳感器數據 (16 位) | . | 0x05 | 寫單個線圈 (Write Single Coil) | 控制設備的數字輸出 (打開/關閉) | . | 0x06 | 寫單個暫存器 (Write Single Register) | 設置設備內部參數或狀態 (16 位) | . | 0x0F | 寫多個線圈 (Write Multiple Coils) | 同時設置多個線圈的狀態（數字輸出），用於控制多個設備開關 | . | 0x10 | 寫多個暫存器 (Write Multiple Registers) | 同時設置多個保持暫存器的值（數據參數），用於批量更新設備配置或控制參數 | . -IFILE: modbus_rtu_protocol.py, modbus RTU 功能碼所對應的相關設定 -ICO_Modbus_RTU : Import modbus RTU and init -INB_READ_COILS : 點擊後開始讀取 Coils 的當前狀態 -IIP1 : 彈出式輸入對話盒 -ITA_slave_id : 點擊後輸入欲連線的 slave id -ITA_slave_addr : 點擊後輸入 slave address -Reg_00~07 : 顯示讀取到的暫存器值 -slave_id : 顯示輸入的 slave id -slave_addr : 顯示輸入的 slave address -ITA_slave_qty : 點擊後輸入欲連線的 quantity -slave_qty : 顯示輸入的 quantity -INB_READ_DISCRETE_INPUTS : 點擊後讀取設備的數字輸入狀態 (0 或 1) -INB_READ_HOLDING_REGISTERS : 點擊後讀取設備內的參數值或狀態值 (16 位) -INB_READ_INPUT_REGISTERS : 點擊後讀取設備的即時測量值或傳感器數據 (16 位) -single_coil : 顯示要控制的 Coil 狀態 -ITA_single_coil : 點擊後輸入欲控制的 Coil 狀態 -INB_WRITE_SINGLE_COIL : 點擊後控制設備的數字輸出 (打開/關閉) -single_reg : 顯示輸入的暫存器值 -ITA_single_reg : 點擊後輸入欲設定的暫存器值 -INB_WRITE_SINGLE_REGISTER : 點擊後設置設備內部參數或狀態 (16 位) -ITA_reg_00~07 : 點擊後輸入暫存器值 -INB_WRITE_MULTIPLE_COILS : 點擊後同時設置多個線圈的狀態（數字輸出），用於控制多個設備開關 -INB_WRITE_MULTIPLE_REGISTERS : 點擊後同時設置多個保持暫存器的值（數據參數），用於批量更新設備配置或控制參數 . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 -RS-485: uart8 : 如下圖 RS-485 Configuration 所示,這裡定義了call back function \"com_rcv(data)\", 來處理從 com port 或接收到的資訊, 並顯示接收到的資料 =&gt; 匯入檔案 1. com.py -&gt; 其中，com.py裡面定義了RS485傳輸的初始化設定(包含uart id, baudrate, buffer size...等) . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb 2. 可以在 PC 端下載 modbus slave, 透過 RS-485 進行溝通 3. Serial setting 與 Slave ID 匹配好設定後方可連線成功 4. 透過切換不同 mode 來讀取/設定 coil 值 與 register 值 (可以設定單個值或是批量設定) 5. 控制的結果會顯示在 PC 端與 Pannel 上 . 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
+    "url": "/en/3.4.3/demo_projects/modbus_rtu/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/en/3.4.3/demo_projects/modbus_rtu/#目標"
+  },"64": {
+    "doc": "Modbus RTU Demo",
+    "title": "Modbus RTU Demo",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/modbus_rtu/",
+    "relUrl": "/en/3.4.3/demo_projects/modbus_rtu/"
+  },"65": {
+    "doc": "Modbus TCP Demo",
+    "title": "Modbus RTU Demo Project 操作示範",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/modbus_tcp/#modbus-rtu-demo-project-%E6%93%8D%E4%BD%9C%E7%A4%BA%E7%AF%84",
+    "relUrl": "/en/3.4.3/demo_projects/modbus_tcp/#modbus-rtu-demo-project-操作示範"
+  },"66": {
+    "doc": "Modbus TCP Demo",
+    "title": "目標",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | Modbus TCP Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_modbus_tcp.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_modbus_tcp.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . | 功能碼 | 功能名稱 | 用途 | . | 0x01 | 讀取線圈 (Read Coils) | 讀取設備的數字輸出狀態 (0 或 1) | . | 0x02 | 讀取離散輸入 (Read Discrete Inputs) | 讀取設備的數字輸入狀態 (0 或 1) | . | 0x03 | 讀取保持暫存器 (Read Holding Registers) | 讀取設備內的參數值或狀態值 (16 位) | . | 0x04 | 讀取輸入暫存器 (Read Input Registers) | 讀取設備的即時測量值或傳感器數據 (16 位) | . | 0x05 | 寫單個線圈 (Write Single Coil) | 控制設備的數字輸出 (打開/關閉) | . | 0x06 | 寫單個暫存器 (Write Single Register) | 設置設備內部參數或狀態 (16 位) | . | 0x0F | 寫多個線圈 (Write Multiple Coils) | 同時設置多個線圈的狀態（數字輸出），用於控制多個設備開關 | . | 0x10 | 寫多個暫存器 (Write Multiple Registers) | 同時設置多個保持暫存器的值（數據參數），用於批量更新設備配置或控制參數 | . -IFILE: modbus_rtu_protocol.py, modbus RTU 功能碼所對應的相關設定 -ICO_Modbus_TCP : Import modbus TCP and init (包含設定IP、Port) -INB_READ_COILS : 點擊後開始讀取 Coils 的當前狀態 -IIP1 : 彈出式輸入對話盒 -ITA_unit_id : 點擊後輸入欲連線的 unit id -ITA_unit_addr : 點擊後輸入 unit address -Reg_00~07 : 顯示讀取到的暫存器值 -unit_id : 顯示輸入的 unit id -unit_addr : 顯示輸入的 unit address -ITA_unit_qty : 點擊後輸入欲連線的 quantity -unit_qty : 顯示輸入的 quantity -INB_READ_DISCRETE_INPUTS : 點擊後讀取設備的數字輸入狀態 (0 或 1) -INB_READ_HOLDING_REGISTERS : 點擊後讀取設備內的參數值或狀態值 (16 位) -INB_READ_INPUT_REGISTERS : 點擊後讀取設備的即時測量值或傳感器數據 (16 位) -single_coil : 顯示要控制的 Coil 狀態 -ITA_single_coil : 點擊後輸入欲控制的 Coil 狀態 -INB_WRITE_SINGLE_COIL : 點擊後控制設備的數字輸出 (打開/關閉) -single_reg : 顯示輸入的暫存器值 -ITA_single_reg : 點擊後輸入欲設定的暫存器值 -INB_WRITE_SINGLE_REGISTER : 點擊後設置設備內部參數或狀態 (16 位) -ITA_reg_00~07 : 點擊後輸入暫存器值 -INB_WRITE_MULTIPLE_COILS : 點擊後同時設置多個線圈的狀態（數字輸出），用於控制多個設備開關 -INB_WRITE_MULTIPLE_REGISTERS : 點擊後同時設置多個保持暫存器的值（數據參數），用於批量更新設備配置或控制參數 . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb 2. 可以在 PC 端下載 modbus slave, 透過 TCP/IP 進行溝通 3. Serial setting 與 unit ID 匹配好設定後方可連線成功 4. 透過切換不同 mode 來讀取/設定 coil 值 與 register 值 (可以設定單個值或是批量設定) 5. 控制的結果會顯示在 PC 端與 Pannel 上 . 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
+    "url": "/en/3.4.3/demo_projects/modbus_tcp/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/en/3.4.3/demo_projects/modbus_tcp/#目標"
+  },"67": {
+    "doc": "Modbus TCP Demo",
+    "title": "Modbus TCP Demo",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/modbus_tcp/",
+    "relUrl": "/en/3.4.3/demo_projects/modbus_tcp/"
+  },"68": {
+    "doc": "I2C Demo",
+    "title": "I2C Demo Project 操作示範",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/i2c/#i2c-demo-project-%E6%93%8D%E4%BD%9C%E7%A4%BA%E7%AF%84",
+    "relUrl": "/en/3.4.3/demo_projects/i2c/#i2c-demo-project-操作示範"
+  },"69": {
+    "doc": "I2C Demo",
+    "title": "目標",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | I2C Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_i2c.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_i2c.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -INB_I2C_SEND_STR: 點擊後傳送字串格式資訊 -IVL_I2C_ADDR: 顯示輸入的 IP Address -IL_I2C_Addr: 文字方塊 -ITA_I2C_Addr: 點擊後輸入 IP Address -IIP_STR: 彈出式輸入對話盒 -IVL_I2C_SEND_STR: 顯示要傳送的字串格式資訊 -IVL_I2C_SEND_INT: 顯示要傳送的整數格式資訊 -ITA1: 點擊後輸入要傳送的資訊(字串格式) -ITA2: 點擊後輸入要傳送的資訊(整數格式) -IIP_INT: 彈出式輸入對話盒 -INB_I2C_SEND_INT: 點擊後傳送整數格式資訊 -IVL_I2C_RCV_STR: 顯示接收到的資訊 -INB_I2C_RECV_STR: 點擊後通過 I2C 從設備讀取數據，清理特定的字節 (b'\\xff')，然後將結果轉換為可讀字符串並存儲起來 -INB_I2C_SCAN: 點擊後開始掃描設備地址，會返回結果存儲並顯示出來，返回的地址是十進制整數，通常範圍在 0x03 到 0x77（7 位地址） -IVL_I2C_ADDR_ARY: 顯示設備地址列表 . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb . 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
+    "url": "/en/3.4.3/demo_projects/i2c/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/en/3.4.3/demo_projects/i2c/#目標"
+  },"70": {
+    "doc": "I2C Demo",
+    "title": "I2C Demo",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/i2c/",
+    "relUrl": "/en/3.4.3/demo_projects/i2c/"
+  },"71": {
+    "doc": "Canbus Demo",
+    "title": "Canbus Demo Project 操作示範",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/canbus/#canbus-demo-project-%E6%93%8D%E4%BD%9C%E7%A4%BA%E7%AF%84",
+    "relUrl": "/en/3.4.3/demo_projects/canbus/#canbus-demo-project-操作示範"
+  },"72": {
+    "doc": "Canbus Demo",
+    "title": "目標",
+    "content": "1. 介紹 Demo Project 功能，協助使用者修改對應的設定，進行客製化調整 2. 將成品輸出至 Ubique panel 使用 . 事前準備 . | 安裝並且啟動 ADE : 請前往ADE Reference Manual下載 | Canbus Demo project : 請前往IOT Website下載 | . 步驟1 : 開啟 ADE . 開啟 ADE: . 步驟2 : 開啟專案檔 “ADE demo_canbus.epgz” . 點擊左上角，選擇開啟，點選 \"ADE demo_canbus.epgz\" 檔案並開啟 . 成功開啟畫面 . 步驟3 : 功能介紹 . Page1 . -IVL_RCV_CAN_ID: 顯示 CANbus ID, ID 負責識別訊息並決定傳輸優先級順序 -IL_RCV_CAN_ID: 文字方塊 \"RCV CAN ID\" -IL_RCV_CAN_DATA: 文字方塊 \"RCV CAN DATA\" -IVL_RCV_CAN_DATA: 顯示接收到的 Data -IVL_SND_CAN_ID: 顯示傳送 Data 的 ID 大小(優先級順序) -IVL_SND_CAN_DATA: 顯示傳送的 Data -IIP_CAN: 彈出式輸入對話盒 -IVL_0~7: 顯示輸入的 Data 值 -ITA_SND_CAN_DATA_0~7: 點擊後依序輸入 Data -IVL_SND_CAN_ID: 顯示欲傳送的 Data -ITA_SND_CAN_ID: 點擊後輸入要傳送裝置的 ID -INB_SEND: 點擊後開始傳送資料 . Page2 . Enable IO : -Backlight : 螢幕鎖定設定 180 秒 -RTC : 設定實時時鐘 . 步驟4 : 輸出 Demo Project . 建議先使用模擬器輸出來確認功能正常，再輸出至 panel . 模擬器輸出 . 點擊\"下載工具\"-&gt;\"啟動模擬器\" 成功後，如下方畫面顯示 . 輸出至 panel . 1. 確保上電之前接上 usb 至 pc 2. 開啟 ADE, 點擊右上角按下匯出 3. 如圖所示, 在匯出視窗中選擇對應的樣板與目標(選擇\"下載到屏\"), 並點擊\"匯出\" . 1. 匯出成功後拔掉 usb 2. 3. 4. 5. 結論 . 以上是 Demo Project 的操作示範, 了解到各功能的運作設定後, 可以依據上述介紹再自行微調客製化的功能. ",
+    "url": "/en/3.4.3/demo_projects/canbus/#%E7%9B%AE%E6%A8%99",
+    "relUrl": "/en/3.4.3/demo_projects/canbus/#目標"
+  },"73": {
+    "doc": "Canbus Demo",
+    "title": "Canbus Demo",
+    "content": " ",
+    "url": "/en/3.4.3/demo_projects/canbus/",
+    "relUrl": "/en/3.4.3/demo_projects/canbus/"
+  },"74": {
     "doc": "FAQ",
     "title": "FAQ",
     "content": " ",
     "url": "/en/3.4.3/faq/",
     "relUrl": "/en/3.4.3/faq/"
-  },"63": {
+  },"75": {
     "doc": "FAQ Try-Except",
     "title": "FAQ Try-Except",
     "content": " ",
     "url": "/en/3.4.3/faq/try-except/",
     "relUrl": "/en/3.4.3/faq/try-except/"
-  },"64": {
+  },"76": {
     "doc": "FAQ Try-Except",
     "title": "目的",
     "content": "善用 try-except 可以幫助程式提高可讀性、防止程式 crash、了解錯誤訊息…等 . ",
     "url": "/en/3.4.3/faq/try-except/#%E7%9B%AE%E7%9A%84",
     "relUrl": "/en/3.4.3/faq/try-except/#目的"
-  },"65": {
+  },"77": {
     "doc": "FAQ Try-Except",
     "title": "介紹",
     "content": "在 Python 中，try-except 是一種異常處理機制。異常（Exception）是指程式在執行過程中遇到的錯誤或不預期的情況。異常處理可以讓我們在遇到錯誤時，不會讓程式 crash，反而可以根據錯誤情況採取適當的措施，像是錯誤記錄、顯示錯誤訊息或繼續執行其他程式碼。 . 範例 . ## try-except 簡例 try: # 可能會拋出異常的程式碼 risky_code() except Exception as e: # 顯示異常資訊 print('Error Msg:{}'.format(e)) . 實例1 : 設計一個 busy_function . try: import time def busy_function(duration): print('Busy function starting for {} seconds...'.format(duration)) start_time = time.time() while time.time() - start_time &lt; duration: # 繼續做計算或保持繁忙 _ = 0 for i in range(10000): _ += i print(\"Busy function completed.\") # 讓 busy_function 跑 20 秒 busy_function(20) except Exception as e: # 顯示異常資訊 print('Error Msg:{}'.format(e)) . ",
     "url": "/en/3.4.3/faq/try-except/#%E4%BB%8B%E7%B4%B9",
     "relUrl": "/en/3.4.3/faq/try-except/#介紹"
-  },"66": {
+  },"78": {
     "doc": "FAQ Try-Except",
     "title": "結論",
     "content": "將 import、def、主程式等…都包在 try-except 內, 確保遇到錯誤時程式不會 crash, 還能顯示錯誤的原因, 了解該如何 debug . ",
     "url": "/en/3.4.3/faq/try-except/#%E7%B5%90%E8%AB%96",
     "relUrl": "/en/3.4.3/faq/try-except/#結論"
-  },"67": {
+  },"79": {
     "doc": "FAQ Watchdog",
     "title": "FAQ Watchdog",
     "content": " ",
     "url": "/en/3.4.3/faq/watchdog/",
     "relUrl": "/en/3.4.3/faq/watchdog/"
-  },"68": {
+  },"80": {
     "doc": "FAQ Watchdog",
     "title": "目的",
     "content": "正確的時機下使用 watchdog feed, 避免用錯地方導致功能無法正常執行 . ",
     "url": "/en/3.4.3/faq/watchdog/#%E7%9B%AE%E7%9A%84",
     "relUrl": "/en/3.4.3/faq/watchdog/#目的"
-  },"69": {
+  },"81": {
     "doc": "FAQ Watchdog",
     "title": "前情提要",
     "content": "Simulator 並沒有 watchdog 相關功能, 因此要實際 load 至板子進行操作 . 實驗: 寫一個 busy_function 在不同 widget function, 並加入 watchdog feed 來測試是否能避免 watchdog reboot . 1. busy function 寫在 Python Code widget 裡 (未加 watchdog feed) . 結果: . | busy function 跑17秒以下可以正常開機 / 18 秒以上會觸發 watchdog reboot 一直重開機 . | 觸發 watchdog reboot 後 若無拔除 usb, 因為 reboot 時偵測到 usb 訊號, 所以會進入到 load fw mode, 若在重開機後馬上重新插拔 usb console 就會重新讀取 busy function” . | . 2. busy function 寫在 Python Code Widget 裡 (加上 watchdog feed) . 結果: . | watchdog feed (也就是 core.htm.wdt.feed()) 加在 busy function 裡後 console log 會出現 Attribute error: -&gt; ==Error: The attribute or method does not exist - ‘NoneType’ object has no attribute ‘feed’== 但不會觸發watchdog (因為跳到except), 沒加try-except就會觸發 watchdog reboot” | . 3. busy function 寫在 Timer、Generic Button Widget 等 (未加 watchdog feed) . 結果: . | 會觸發 watchdog reboot 一直重開機 | . 4. busy function 寫在 Timer、Generic Button Widget 等 (加上 watchdog feed) . 結果: . | 成功呼叫 watchdog feed, 不會觸發 watchdog reboot, busy function 跑完後其他功能可以照常使用 | . 了解 watchdog feed (core.htm.wdt.feed()) 被設定的時間點 . watchdog feed 設定的時間點比執行 Python Code Widget 還要晚, 因此如要新增 watchdog feed, 應該在其他 widget 裡面設定, 例如: Timer widget 讓它定時去呼叫 watchdog feed, 避免 watchdog reboot . 備註: . | ui.py 檔案內, 有一行 logo.__showLogoPage() 會呼叫 core.htm._start_task_handler(), 這裡包含了 feed 的設定. 在此之前, Python Code Widget 的內容已經在參考圖中 global function 的位置被執行了 (早於呼叫 logo.__showLogoPage() 的時間點) 因此不能把 core.htm.wdt.feed() 寫在 Python Code Widget | . 參考圖: . 總結 . | 若要使用 watchdog feed, 避免將 core.htm.wdt.feed() 寫在 Python Code Widget 裡 , 應寫在如 Timer Widget 裡面, 定時去呼叫, 避免觸發 watchdog reboot . | 善用 try-except, 透過 console log 去了解錯誤訊息, 幫助排除問題 (參考 Try-Except) . | Simulator 並沒有 watchdog 功能, 因此要實際 load 至板子進行操作 . | 注意開機模式 是否為 load fw mode (上電前就接上 usb 會進入此模式)or 正常開機模式(上電後再接上 usb 會進入此模式, 此時可以看到 console log 幫助錯誤處理) . | . 實例 : 設計一個 busy_function 在 Timer Widget 裡, 並加上 watchdog feed 避免觸發 watchdog reboot . try: import core def busy_function(duration): print('Busy function starting for {} seconds...'.format(duration)) start_time = time.time() while time.time() - start_time &lt; duration: # 繼續做計算或保持繁忙 _ = 0 for i in range(10000): _ += i ##call watchdog feed print(\"Feed watchdog.\") core.htm.wdt.feed() print(\"Watchdog feed successfully.\") print(\"Busy function completed.\") busy_function(30) except Exception as e: print('Error Msg:{}'.format(e)) . ",
     "url": "/en/3.4.3/faq/watchdog/#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81",
     "relUrl": "/en/3.4.3/faq/watchdog/#前情提要"
-  },"70": {
+  },"82": {
     "doc": "Auto Redirect",
     "title": "Auto Redirect",
     "content": "Redirecting to latest version . ",
     "url": "/en/",
     "relUrl": "/en/"
-  },"71": {
+  },"83": {
     "doc": "Application Note",
     "title": "Application Note",
     "content": " ",
     "url": "/zh-tw/3.3.0/",
     "relUrl": "/zh-tw/3.3.0/"
-  },"72": {
+  },"84": {
     "doc": "Connect with Arduino",
     "title": "How to Connect Ubique Panel with Arduino",
     "content": " ",
     "url": "/zh-tw/3.3.0/connect_with_arduino/#how-to-connect-ubique-panel-with-arduino",
     "relUrl": "/zh-tw/3.3.0/connect_with_arduino/#how-to-connect-ubique-panel-with-arduino"
-  },"73": {
+  },"85": {
     "doc": "Connect with Arduino",
     "title": "目標",
     "content": ". | 以Arduino作為主控版，將讀取的IO訊息顯示在Ubique Panel上 . | Ubique Panel與使用者的互動，可以通過通訊協定傳送給Arduino，Arduino控制板可採取相應措施 . | . 事前準備 . | ADE : 請前往IOT Website下載 . | Arduino IDE : 請前往Arduino Website下載 . | . 步驟1 : 下載 IOTBinary Protocol . | 前往 IOT Github . | 下載ZIP檔 . | 根據 README.md 進行操作 . | . 步驟2 : 開啟Arduino IDE . | 建立一個資料夾並命名為 demobox_arduino . | 將從Github下載的ZIP檔解壓縮 . | src裡面的IOTBinaryProtocol.cpp和IOTBinaryProtocol.h檔複製到demobox_arduino的資料夾中 . | examples裡面的demobox_arduino.ino複製到demobox_arduino的資料夾中 . | 利用Arduino IDE開啟demobox_arduino資料夾中的demobox_arduino.ino . | 開發版選擇 Arduino Nano . | 利用usb A轉mini連接線連接Arduino Nano和PC，選擇正確的處理器和序列埠 . | 請依不同Nano選擇處理器，如果還有問題請參考Arduino Website | . | 如果找不到序列埠，請至ftdichip官網下載FT232 USB UART Driver | . | 點擊箭頭⇨下載Arduino程式 . | 拔除Arduino與PC的usb連線 . | . 步驟3 : 開啟 ADE . | 利用ADE開啟examples &gt; ade資料夾中的demobox.epgz . | 將電源和Ubique Panel連接 . | 開啟電源 . | 利用usb線連接Ubique Panel和PC . | 點擊箭頭⇩下載ADE Design . | 拔除Ubique Panel與PC的連線 . | . 步驟4 : 連接Arduino控制板和Ubique Panel . | 利用杜邦線連接Arduino控制板和Ubique Panel . | Arduino Nano 請獨立供電 . | Ubique Panel上的連接器是Pitch 2.0 . | . | . ",
     "url": "/zh-tw/3.3.0/connect_with_arduino/#%E7%9B%AE%E6%A8%99",
     "relUrl": "/zh-tw/3.3.0/connect_with_arduino/#目標"
-  },"74": {
+  },"86": {
     "doc": "Connect with Arduino",
     "title": "Connect with Arduino",
     "content": " ",
     "url": "/zh-tw/3.3.0/connect_with_arduino/",
     "relUrl": "/zh-tw/3.3.0/connect_with_arduino/"
-  },"75": {
+  },"87": {
     "doc": "Arduino HMI",
     "title": "Arduino HMI",
     "content": " ",
     "url": "/zh-tw/3.3.0/arduino_hmi/",
     "relUrl": "/zh-tw/3.3.0/arduino_hmi/"
-  },"76": {
+  },"88": {
     "doc": "Arduino HMI",
     "title": "Goals",
     "content": ". | Use Arduino module as the main control board for controlling the I/O functions and show I/O status on Ubique Panel . | Ubique Panel serves as the HMI that communicates with the Arduino module with the predfined protocol. Users can accomplish this without writing any code in Ubique Panel. | . Preparations . | ADE: Please download from IOT Website . | Arduino IDE: Please download from Arduino Website . | . Step 1 : Download IOTBinary Protocol . | Please go to IOT Github . | Download the ZIP file . | Please follow the instructions described in README.md . | . Step 2 : Open Arduino IDE . | Please create a folder and name it demobox_arduino. | Please unzip the downloaded ZIP file from Githbub. | Please copy IOTBinaryProtocol.cpp and IOTBinaryProtocol.h of src directory to demobox_arduino. | Please copy demobox_arduino.ino of examples directory to demobox_arduino. | Please open demobox_arduino.ino of folder demobox_arduino in Arduino IDE. | Please choose Arduino Nano . | Use USB Type A to USB mini connector to connect Arduino Nano with your PC. Please make sure you choose the right processor and serial port. | Please choose the right processor for your NANO module. Please refer to Arduino Website for details. | . | If you cannot find the serial port, Please visit ftdichip and download FT232 USB UART Driver. | . | Pleae click arrow ⇨ to download Arduino program. | Please disconnet the USB cable between the Arduino module and your PC. | . Step 3 : Open ADE . | In ADE, please open demobox.epgz in the examples &gt; ade folder. | Conneect Ubique Panel power cable. | Switch on power. | Use USB cabel to connect your PC with Ubique Panel. | Please click ⇩ for downloading the ADE Design to Ubique Panel. | Disconnect the USB cable between Ubique Panel and your PC. | . Step 4 : Connect Arduino module and Ubique Panel . | Please use DuPont Line to connect the Arduino with Ubique Panel . | ARDUINO NANO module needs a separate and independent power supply. | The connector pitch of Ubique Panel is 2.0mm. | . | . ",
     "url": "/zh-tw/3.3.0/arduino_hmi/#goals",
     "relUrl": "/zh-tw/3.3.0/arduino_hmi/#goals"
-  },"77": {
+  },"89": {
     "doc": "Arduino HMI",
     "title": "Arduino HMI",
     "content": " ",
     "url": "/zh-tw/3.4.1/",
     "relUrl": "/zh-tw/3.4.1/"
-  },"78": {
+  },"90": {
     "doc": "與Arduino通訊",
     "title": "如何連接博橡Ubique Panel和Arduino",
     "content": " ",
     "url": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#%E5%A6%82%E4%BD%95%E9%80%A3%E6%8E%A5%E5%8D%9A%E6%A9%A1ubique-panel%E5%92%8Carduino",
     "relUrl": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#如何連接博橡ubique-panel和arduino"
-  },"79": {
+  },"91": {
     "doc": "與Arduino通訊",
     "title": "目標",
     "content": ". | 以Arduino作為主控版，將讀取的IO訊息顯示在Ubique Panel上 . | Ubique Panel與使用者的互動，可以通過通訊協定傳送給Arduino，Arduino控制板可採取相應措施 . | . 事前準備 . | ADE : 請前往IOT Website下載 . | Arduino IDE : 請前往Arduino Website下載 . | . 步驟1 : 下載 IOTBinary Protocol . | 前往 IOT Github . | 下載ZIP檔 . | 根據 README.md 進行操作 . | . 步驟2 : 開啟Arduino IDE . | 建立一個資料夾並命名為 demobox_arduino . | 將從Github下載的ZIP檔解壓縮 . | src裡面的IOTBinaryProtocol.cpp和IOTBinaryProtocol.h檔複製到demobox_arduino的資料夾中 . | examples裡面的demobox_arduino.ino複製到demobox_arduino的資料夾中 . | 利用Arduino IDE開啟demobox_arduino資料夾中的demobox_arduino.ino . | 開發版選擇 Arduino Nano . | 利用usb A轉mini連接線連接Arduino Nano和PC，選擇正確的處理器和序列埠 . | 請依不同Nano選擇處理器，如果還有問題請參考Arduino Website | . | 如果找不到序列埠，請至ftdichip官網下載FT232 USB UART Driver | . | 點擊箭頭⇨下載Arduino程式 . | 拔除Arduino與PC的usb連線 . | . 步驟3 : 開啟 ADE . | 利用ADE開啟examples &gt; ade資料夾中的demobox.epgz . | 將電源和Ubique Panel連接 . | 開啟電源 . | 利用usb線連接Ubique Panel和PC . | 點擊箭頭⇩下載ADE Design . | 拔除Ubique Panel與PC的連線 . | . 步驟4 : 連接Arduino控制板和Ubique Panel . | 利用杜邦線連接Arduino控制板和Ubique Panel . | Arduino Nano 請獨立供電 . | Ubique Panel上的連接器是Pitch 2.0 . | . | . ",
     "url": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#%E7%9B%AE%E6%A8%99",
     "relUrl": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/#目標"
-  },"80": {
+  },"92": {
     "doc": "與Arduino通訊",
     "title": "與Arduino通訊",
     "content": " ",
     "url": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/",
     "relUrl": "/zh-tw/3.4.1/arduino_hmi/connect_with_arduino/"
-  },"81": {
+  },"93": {
     "doc": "直屏支援",
     "title": "如何更新韌體以支援直屏",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/#%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E9%9F%8C%E9%AB%94%E4%BB%A5%E6%94%AF%E6%8F%B4%E7%9B%B4%E5%B1%8F",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#如何更新韌體以支援直屏"
-  },"82": {
+  },"94": {
     "doc": "直屏支援",
     "title": "目標",
     "content": ". | 將橫屏轉為直屏使用 | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/#%E7%9B%AE%E6%A8%99",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#目標"
-  },"83": {
+  },"95": {
     "doc": "直屏支援",
     "title": "注意事項",
     "content": ". | 橫屏與直屏的轉換，無法於執行時啟用，必須透過更新正確的韌體來達到 . | 轉了直屏後，可透過更新韌體再轉回橫屏 . | 兩個產品提供直屏模式 : IA208048MC-050ABP 和 IA208048MC-050ABJ . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#注意事項"
-  },"84": {
+  },"96": {
     "doc": "直屏支援",
     "title": "事前準備",
     "content": ". | 最新版ADE (3.4.1) : 請前往IOT Website下載 . | USB A to Micro USB的線 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/#事前準備"
-  },"85": {
+  },"97": {
     "doc": "直屏支援",
     "title": "直屏支援",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/"
-  },"86": {
+  },"98": {
     "doc": "獲取控制板資訊",
     "title": "如何獲取控制板資訊",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E5%A6%82%E4%BD%95%E7%8D%B2%E5%8F%96%E6%8E%A7%E5%88%B6%E6%9D%BF%E8%B3%87%E8%A8%8A",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#如何獲取控制板資訊"
-  },"87": {
+  },"99": {
     "doc": "獲取控制板資訊",
     "title": "步驟1",
     "content": ". | 打開ADE 3.4.1 . 可由 系統選單 &gt; 關於… 確認ADE版本 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F1",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟1"
-  },"88": {
+  },"100": {
     "doc": "獲取控制板資訊",
     "title": "步驟2",
     "content": ". | 將電腦和控制板用USB線做連接 | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F2",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟2"
-  },"89": {
+  },"101": {
     "doc": "獲取控制板資訊",
     "title": "步驟3",
     "content": ". | 開啟 系統選單 &gt; 設定… . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F3",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟3"
-  },"90": {
+  },"102": {
     "doc": "獲取控制板資訊",
     "title": "步驟4",
     "content": ". | 選擇 安裝與更新 &gt; 重新取得控制板資訊 . | 點選取得控制板資訊後，可以得到控制板的尺寸，LCM供應商，以及解析度等等 . | E表示Evervision，P表示Powertip . | 解析度為800x480 . | . | 記住LCM供應商以及解析度，更新韌體時會需要這些資訊 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#%E6%AD%A5%E9%A9%9F4",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/#步驟4"
-  },"91": {
+  },"103": {
     "doc": "獲取控制板資訊",
     "title": "獲取控制板資訊",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/gather_control_board_info/"
-  },"92": {
+  },"104": {
     "doc": "更新韌體",
     "title": "如何更新韌體",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E9%9F%8C%E9%AB%94",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#如何更新韌體"
-  },"93": {
+  },"105": {
     "doc": "更新韌體",
     "title": "步驟1",
     "content": ". | 打開ADE 3.4.1 . 可由 系統選單 &gt; 關於… 確認ADE版本 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F1",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟1"
-  },"94": {
+  },"106": {
     "doc": "更新韌體",
     "title": "步驟2",
     "content": ". | 將電腦和控制板用USB線做連接 | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F2",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟2"
-  },"95": {
+  },"107": {
     "doc": "更新韌體",
     "title": "步驟3",
     "content": ". | 開啟 系統選單 &gt; 設定… . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F3",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟3"
-  },"96": {
+  },"108": {
     "doc": "更新韌體",
     "title": "步驟4",
     "content": ". | 選擇 安裝與更新 &gt; 韌體更新 . | 在這裡我們需要用到上個章節所得到的LCM供應商以及解析度資訊 . | 如果使用的為LCM供應商為Evervision，則選擇480x800 Evervision的韌體，並點選開啟 . | 如果使用的LCM供應商為Powertip，則選擇480x800 Powertip的韌體，並點選開啟 . | . | 當看到此訊息框，表示韌體更新成功並完成 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#%E6%AD%A5%E9%A9%9F4",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/#步驟4"
-  },"97": {
+  },"109": {
     "doc": "更新韌體",
     "title": "更新韌體",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/update_firmware/"
-  },"98": {
+  },"110": {
     "doc": "問題與解決",
     "title": "常見問題與解決",
     "content": ". | 更新完韌體後，重新開機可能會遇到以下幾種問題 | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%88%87%E8%A7%A3%E6%B1%BA",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#常見問題與解決"
-  },"99": {
+  },"111": {
     "doc": "問題與解決",
     "title": "問題1",
     "content": ". | Loader Logo顯示異常 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E5%95%8F%E9%A1%8C1",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#問題1"
-  },"100": {
+  },"112": {
     "doc": "問題與解決",
     "title": "問題2",
     "content": ". | 畫面只顯示一半的內容 . | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E5%95%8F%E9%A1%8C2",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#問題2"
-  },"101": {
+  },"113": {
     "doc": "問題與解決",
     "title": "解決方法",
     "content": ". | 當遇到上述問題，請確認ADE專案的解析度是否正確，並下載正確解析度的專案 | . ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/#解決方法"
-  },"102": {
+  },"114": {
     "doc": "問題與解決",
     "title": "問題與解決",
     "content": " ",
     "url": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/",
     "relUrl": "/zh-tw/3.4.1/portrait_mode_support/trouble_shooting/"
-  },"103": {
+  },"115": {
     "doc": "Auto Redirect",
     "title": "Auto Redirect",
     "content": "Redirecting to latest version . ",
