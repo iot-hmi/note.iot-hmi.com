@@ -125,10 +125,10 @@
       
       <div id="main-content" class="main-content" role="main">
         
-          <h1 id="modbus-rtu-demo-project-操作示範">
+          <h1 id="modbus-tcp-demo-project-操作示範">
         
         
-          <a href="#modbus-rtu-demo-project-操作示範" class="anchor-heading" aria-labelledby="modbus-rtu-demo-project-操作示範"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Modbus RTU Demo Project 操作示範
+          <a href="#modbus-tcp-demo-project-操作示範" class="anchor-heading" aria-labelledby="modbus-tcp-demo-project-操作示範"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Modbus TCP Demo Project 操作示範
         
         
       </h1>
@@ -259,7 +259,7 @@
   </tbody>
 </table></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-IFILE: modbus_rtu_protocol.py, modbus RTU 功能碼所對應的相關設定
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-IFILE: modbus_tcp_protocol.py, modbus TCP 功能碼所對應的相關設定
 -ICO_Modbus_TCP : Import modbus TCP and init (包含設定IP、Port)
 -INB_READ_COILS : 點擊後開始讀取 Coils 的當前狀態
 
@@ -345,8 +345,8 @@
 <p><img src="/en/3.4.3/imgs/pannel.png" alt="" /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 匯出成功後拔掉 usb
-2. 可以在 PC 端下載 modbus slave, 透過 TCP/IP 進行溝通
-3. Serial setting 與 unit ID 匹配好設定後方可連線成功
+2. 可以在 PC 端下載 ICDT Modbus TCP, 透過 TCP/IP 進行溝通
+3. init 設定 ip:127.0.0.1, port:502, 匹配好設定後方可連線成功
 4. 透過切換不同 mode 來讀取/設定 coil 值 與 register 值 (可以設定單個值或是批量設定)
 5. 控制的結果會顯示在 PC 端與 Pannel 上
 </code></pre></div></div>
